@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WEB Halloween</title>
+  <meta name="title" content="WEB Halloween">
+  <!-- <meta name="description" content="WEB QuocKhanh"> -->
+  <!-- <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml"> -->
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <header class="header section" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images_1/anh_chinh/zyro-image.png" width="100" height="40" alt="Blogy logo">
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link hover:underline" data-nav-link>Trang Chủ</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link hover:underline" data-nav-link>Nhân vật</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link hover:underline" data-nav-link>Lịch Sử</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <div class="wrapper">
+
+        <button class="search-btn" aria-label="search" data-search-toggler>
+          <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+
+          <span class="span">Tìm Kiếm</span>
+        </button>
+
+        <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+          <span class="span one"></span>
+          <span class="span two"></span>
+          <span class="span three"></span>
+        </button>
+
+        <a href="#" class="btn">Nhấn</a>
+
+      </div>
+
+    </div>
+  </header>
+
+  <!-- 
+    - #SEARCH BAR
+  -->
+
+  <div class="search-bar" data-search-bar>
+
+    <div class="input-wrapper">
+      <input type="search" name="search" placeholder="Tìm Kiếm" class="input-field">
+
+      <button class="search-close-btn" aria-label="close search bar" data-search-toggler> <!-- data-search-close -->
+        <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+    </div>
+
+    <p class="search-bar-text">Nhập từ cần tìm vào</p>
+
+  </div>
+
+
+  <div class="overlay" data-overlay data-search-toggler></div>
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" aria-label="home">
+        <div class="container">
+
+          <h1 class="h1 hero-title">
+            <strong class="strong">Web!.</strong> Nơi tìm hiểu về  ngày  Halloween.
+          </h1>
+
+          <div class="wrapper">
+
+            <form action="" class="newsletter-form">
+              <input type="email" name="email_address" placeholder="Địa chỉ Email của Bạn" class="email-field">
+
+              <button type="button" class="btn" id="btn-login">Đăng ký</button>
+            </form>
+
+            <div id="login-form" >
+              <form action="">
+                <div class="container-login">
+                  <div class="top-header">
+                      <span class="span-login">Have an account?</span>
+                      <header class="header-login">Login</header>
+                  </div>
+                  <div class="input-field-login">
+                      <input type="text" class="input-login" placeholder="Username" required>
+                      <i class="bx bx-user i-login"></i>
+                  </div>
+                  <div class="input-field-login">
+                      <input type="password" class="input-login" placeholder="Password" required>
+                      <i class="bx bx-lock-alt i-login"></i>
+                  </div>
+                  <div class="input-field-login">
+                      <input type="submit" class="submit" value="Login">
+                  </div>
+                  <div class="bottom">
+                      <div class="left">
+                          <input type="checkbox"  id="check">
+                          <label for="check"> Remember Me</label>
+                      </div>
+                      <div class="right">
+                          <label><a class="a-login" href="#">Forgot password?</a></label>
+                      </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+            
+
+            <p class="newsletter-text">
+              Nhập email để mở khóa quyền truy cập vào nội dung và cập nhật thành viên
+            </p>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #FEATURED POST
+      -->
+
+      <section class="section featured" aria-label="featured post">
+        <div class="container">
+
+          <p class="section-subtitle">
+          Các bài báo về  <strong class="strong">Halloween</strong>
+          </p>
+
+          <ul class="has-scrollbar">
+
+            <li class="scrollbar-item">
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 500; --height: 600;">
+                  <img src="./assets/images_1/anh_chinh/anh1.webp" width="500" height="600" loading="lazy"
+                    alt="Bác Hồ" class="img-cover">
+
+                  <ul class="avatar-list absolute">            
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li>
+                      <a href="#" class="card-tag">Thiết Kế</a>
+                    </li>
+
+                    <li>
+                      <a href="#" class="card-tag">Ý Tưởng</a>
+                    </li>
+
+                    <li>
+                      <a href="#" class="card-tag">Nội Dung</a>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h4">
+                    <a href="#" class="card-title hover:underline">
+                      Thảm kịch đêm lễ hội Halloween, nhiều nước gửi lời chia buồn
+                    </a>
+                  </h3>
+
+                  <p class="card-text">
+                    TTO - Tổng thống Pháp Emmanuel Macron là một trong những lãnh đạo chính trị đầu tiên tuyên bố sát cánh cùng nhân dân Hàn Quốc và người dân thủ đô Seoul, sau thảm kịch làm thiệt mạng ít nhất 146 người và bị thương hơn 150 người.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 500; --height: 600;">
+                  <img src="./assets/images_1/anh_chinh/anh2.jpg" width="500" height="600" loading="lazy"
+                    alt="Đai Tuong Vo Nguyen Giap" class="img-cover">
+
+                  <ul class="avatar-list absolute">           
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li>
+                      <a href="#" class="card-tag">Nội Dung</a>
+                    </li>
+
+                    <li>
+                      <a href="#" class="card-tag">Sản Xuất</a>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h4">
+                    <a href="#" class="card-title hover:underline">
+                      Ý nghĩa và nguồn gốc ngày Halloween ít người biết
+                    </a>
+                  </h3>
+
+                  <p class="card-text">
+                    SKĐS - Halloween đã trở thành một lễ hội phổ biến ở nhiều nước, trong đó có Việt Nam. Tuy nhiên, không phải ai cũng biết ý nghĩa và nguồn gốc ngày Halloween.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 500; --height: 600;">
+                  <img src="./assets/images_1/anh_chinh/anh3.jpg" width="500" height="600" loading="lazy"
+                    alt="phandinhgiop" class="img-cover">
+
+                  <ul class="avatar-list absolute">
+
+                    <li class="avatar-item">
+                    </li>
+
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li>
+                      <a href="#" class="card-tag">Thiết Kế</a>
+                    </li>
+
+                    <li>
+                      <a href="#" class="card-tag">Sáng Tạo</a>
+                    </li>
+
+                    <li>
+                      <a href="#" class="card-tag">Nội Dung</a>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h4">
+                    <a href="#" class="card-title hover:underline">
+                      Halloween là ngày gì? Nguồn gốc, ý nghĩa và 7 món ăn truyền thống Halloween
+                    </a>
+                  </h3>
+
+                  <p class="card-text">
+                    Halloween được biết đến là một trong những lễ hội lớn ở các nước phương Tây. Vậy không biết bạn đã biết rõ về nguồn gốc của lễ hội này 
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 500; --height: 600;">
+                  <img src="./assets/images_1/anh_chinh/-4136-1667230568.jpg" width="500" height="600" loading="lazy"
+                    alt="tovinhdiem" class="img-cover">
+
+                  <ul class="avatar-list absolute">
+
+                    <li class="avatar-item">
+                      
+                    </li>
+
+                    <li class="avatar-item">
+                    </li>
+
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li>
+                      <a href="#" class="card-tag">Con Người</a>
+                    </li>
+
+                    <li>
+                      <a href="#" class="card-tag">Tin</a>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h4">
+                    <a href="#" class="card-title hover:underline">
+                      Tranh cãi tổ chức  Halloween trong trường học
+                    </a>
+                  </h3>
+
+                  <p class="card-text">
+                    Một số trường thấy "không cần thiết" tổ chức Halloween vì "rùng rợn, kinh dị" song không ít trường cho đây là một hoạt động giúp học sinh hiểu biết và hội nhập.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 500; --height: 600;">
+                  <img src="./assets/images_1/anh_chinh/anh4.jpg" width="500" height="600" loading="lazy"
+                    alt="beVanDan" class="img-cover">
+
+                  <ul class="avatar-list absolute">
+
+                    <li class="avatar-item">
+                    </li>
+
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li>
+                      <a href="#" class="card-tag">Ý Tưởng</a>
+                    </li>
+
+                    <li>
+                      <a href="#" class="card-tag">Con Người</a>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h4">
+                    <a href="#" class="card-title hover:underline">
+                      Tại sao Halloween diễn ra vào ngày 31/10?
+                    </a>
+                  </h3>
+
+                  <p class="card-text">
+                    Halloween là một lễ hội thường niên được tổ chức vào 31/10 hàng năm. Nhưng tại sao Halloween lại diễn ra vào ngày 31/10? Tại sao người ta phải hoá trang và ăn mặc ma quỷ 
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 500; --height: 600;">
+                  <img src="./assets/images_1/anh_chinh/anh4.jpg" width="500" height="600" loading="lazy"
+                    alt="TranCan" class="img-cover">
+
+                  <ul class="avatar-list absolute">
+
+                    <li class="avatar-item">
+                      <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
+                        <img src="./assets/images/coVN.jpg" width="100" height="100" loading="lazy" alt="Author"
+                          class="img-cover">
+                      </a>
+                    </li>
+
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li>
+                      <a href="#" class="card-tag">Ý Tưởng</a>
+                    </li>
+
+                    <li>
+                      <a href="#" class="card-tag">Sáng Tạo</a>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h4">
+                    <a href="#" class="card-title hover:underline">
+                      Năm nay, xu hướng tìm kiếm từ khóa “Halloween” trên Google của người dùng tại Việt Nam bắt đầu tăng dần từ giữa tháng 9 đến nay với các từ khóa hàng đầu bao gồm: Lễ hội Halloween; Trang trí Halloween; Hóa trang Halloween; Trang điểm Halloween; Phim Halloween.
+                    </a>
+                  </h3>
+
+                  <p class="card-text">
+                    Trong trận đánh đồi Him Lam mở đầu cho chiến dịch Điện Biên Phủ, Trần Can được giao nhiệm vụ chỉ huy tiểu đội thọc sâu diệt sở chỉ huy và cắm lá cờ “quyết chiến, quyết thắng” của Hồ Chủ Tịch giao cho quân đội, lên đồn Pháp.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #RECENT POST
+      -->
+
+      <section class="section recent" aria-label="recent post">
+        <div class="container">
+
+          <div class="title-wrapper">
+
+            <h2 class="h2 section-title">
+              Các Sự Kiện <strong class="strong">Lịch Sử</strong>
+            </h2>
+
+            <!-- <div class="top-author">
+              <ul class="avatar-list">
+
+                <li class="avatar-item">
+                  <a href="#" class="avatar large img-holder" style="--width: 100; --height: 100;">
+                    <img src="./assets/images/coVN.jpg" width="100" height="100" alt="top author" class="img-cover">
+                  </a>
+                </li>
+
+                <li class="avatar-item">
+                  <a href="#" class="avatar large img-holder" style="--width: 100; --height: 100;">
+                    <img src="./assets/images/quocHuy.jpg" width="100" height="100" alt="top author" class="img-cover">
+                  </a>
+                </li>
+
+                <li class="avatar-item">
+                  <a href="#" class="avatar large img-holder" style="--width: 100; --height: 100;">
+                    <img src="./assets/images/tacgia_31.jpg" width="100" height="100" alt="top author" class="img-cover">
+                  </a>
+                </li>
+
+                <li class="avatar-item">
+                  <a href="#" class="avatar large img-holder" style="--width: 100; --height: 100;">
+                    <img src="./assets/images/biendong.jpg" width="100" height="100" alt="top author" class="img-cover">
+                  </a>
+                </li>
+
+              </ul>
+
+              <span class="span">Các tác giả có nhiều đóng góp</span>
+            </div> -->
+
+          </div>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 550; --height: 660;">
+                  <img src="./assets/images_1/anh_chinh/anh5.jpg" width="550" height="660" loading="lazy"
+                    alt="" class="img-cover">
+
+                  <ul class="avatar-list absolute">
+
+                    <li class="avatar-item">
+                      <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
+                       
+                          class="img-cover">
+                      </a>
+                   
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li>
+                      <a href="#" class="card-tag">Con Người</a>
+                    </li>
+
+                    <li>
+                      <a href="#" class="card-tag">Trải Nghiệm</a>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h4">
+                    <a href="#" class="card-title hover:underline">
+                      Trò chơi ngày Halloween mạng nhện
+                    </a>
+                  </h3>
+
+                  <p class="card-text">
+                    Các bạn hãy làm những chiếc mạng nhện handmade từ dây bện, dây thừng hay dây sợi rồi sau đó thảo luận cùng nhau về mạng nhện để kích thích tư duy và khám phá bản thân nhé.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 550; --height: 660;">
+                  <img src="./assets/images_1/anh_chinh/anh6.jpg" width="550" height="660" loading="lazy"
+                    alt="Being unique is better than being perfect" class="img-cover">
+
+                  <ul class="avatar-list absolute">
+                    </li>
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li>
+                      <a href="#" class="card-tag">Thiết kế</a>
+                    </li>
+
+                    <li>
+                      <a href="#" class="card-tag">Ý Tưởng</a>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h4">
+                    <a href="#" class="card-title hover:underline">
+                    Trò chơi đớp táo
+                    </a>
+                  </h3>
+
+                  <p class="card-text">
+                    Có nguồn gốc từ truyền thuyết về người Celtic bị những người La Mã đánh chiếm, bạn nhỏ nào lấy được nhiều táo nhất sẽ gặp nhiều may mắn suốt cả năm. Dù ra đời cách đây khá lâu nhưng mỗi mùa lễ hội Halloween, nhiều gia đình lại tổ chức “đớp táo” để đem lại niềm vui cho các bạn nhỏ cũng như đem lại những giây phút thư giãn thoải mái.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 550; --height: 660;">
+                  <img src="./assets/images_1/anh_chinh/anh7.jpg" width="550" height="660" loading="lazy"
+                    alt="Now we’re getting somewhere" class="img-cover">
+
+                  <ul class="avatar-list absolute">
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li>
+                      <a href="#" class="card-tag">Lịch Sử</a>
+                    </li>
+
+                    <li>
+                      <a href="#" class="card-tag">Con Người</a>
+                    </li>
+
+                    <li>
+                      <a href="#" class="card-tag">Trải Nghiệm</a>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h4">
+                    <a href="#" class="card-title hover:underline">
+                      Vẽ trang trí bí ngô
+                    </a>
+                  </h3>
+
+                  <p class="card-text">
+                    Các bạn có thể cùng cha mẹ tạo ra những hình thù vui mắt và hài hước từ những quả bí ngô – một biểu tượng nổi tiếng trong mỗi dịp lễ Halloween để kích thích sức sáng tạo cua bản thân. Cả gia đình cùng nhau trang trí những quả bí ngô và tận hưởng những trải nghiệm tuyệt vời bên nhau.s
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 550; --height: 660;">
+                  <img src="./assets/images_1/anh_chinh/anh8.jpg" width="550" height="660" loading="lazy"
+                    alt="Bảo vệ biên giới phía Bắc: Cuộc chiến đấu chính nghĩa của dân tộc" class="img-cover">
+
+                  <ul class="avatar-list absolute">
+
+
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li>
+                      <a href="#" class="card-tag">Cuộc Sống</a>
+                    </li>
+
+                    <li>
+                      <a href="#" class="card-tag">Thiết Kế</a>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h4">
+                    <a href="#" class="card-title hover:underline">
+                      Chọc quả bí ngô – Trò chơi Halloween mới lạ hấp dẫn
+                    </a>
+                  </h3>
+
+                  <p class="card-text">
+                    Làm một quả bí ngô to từ những hộp nhựa và giấy màu cam. Cho kẹo hoặc giải thưởng vào mỗi hộp nhỏ đó rồi lấy giấy màu bịt miệng hộp lại. Cuối cùng các bạn chọn lựa và chọc ngón tay vào rinh quà.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="">
+
+                <figure class="card-banner img-holder" style="--width: 550; --height: 660;">
+                  <img src="./assets/images_1/anh_chinh/anh9.jpg" width="550" height="660" loading="lazy"
+                    alt="Đường 14 - Phước Long: Bước ngoặt đi đến Tổng tiến công và nổi dậy mùa Xuân 1975" class="img-cover">
+
+                  <ul class="avatar-list absolute">
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li>
+                      <a href="#" class="card-tag">Con Người</a>
+                    </li>
+
+                    <li>
+                      <a href="#" class="card-tag">Tin</a>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h4">
+                    <a href="#" class="card-title hover:underline">
+                      Kể chuyện ma trong đêm Halloween
+                    </a>
+                  </h3>
+
+                  <p class="card-text">
+                    Những câu chuyện kinh điển như Dracula hay Frankenstein nên được thêm vào như thứ gia vị độc đáo nhân ngày lễ Halloween. Hứa hẹn rằng các bạn sẽ cực kỳ hào hứng với những trải nghiệm lạ lẫm này đấy.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 550; --height: 660;">
+                  <img src="./assets/images_1/anh_chinh/anh10.jpg" width="550" height="660" loading="lazy"
+                    alt="Điện Biên Phủ trên không - Một đỉnh cao chiến thắng của văn hóa quân sự Việt Nam hiện đại" class="img-cover">
+
+                  <ul class="avatar-list absolute">
+
+                    <li class="avatar-item">
+                      <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
+                        <img src="./assets/images_1/anh_chinh/anh10.jpg" width="100" height="100" loading="lazy" alt="Author"
+                          class="img-cover">
+                      </a>
+                    </li>
+
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li>
+                      <a href="#" class="card-tag">Con Người</a>
+                    </li>
+
+                    <li>
+                      <a href="#" class="card-tag">Trải Nghiệm</a>
+                    </li>
+
+                    <li>
+                      <a href="#" class="card-tag">Tin</a>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h4">
+                    <a href="#" class="card-title hover:underline">
+                      Trò chơi Bịt mắt makeup
+                    </a>
+                  </h3>
+
+                  <p class="card-text">
+                    Người tham gia chơi sẽ có 10 phút để giúp bạn cùng đội makeup. Quy định khá đơn giản, bạn nam sẽ bị bịt mắt lại và bạn nữ là người được trang điểm. Đội nào có sản phẩm cuối cùng hấp dẫn và đẹp mắt sẽ được ban tổ chức tặng quà.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <button class="btn">Thêm</button>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #RECOMMENDED POST
+      -->
+
+      <section class="section recommended" aria-label="recommended post">
+        <div class="container">
+
+          <p class="section-subtitle">
+        
+                   
+
+
+
+
+      <!-- 
+        - #NEWSLETTER
+      -->
+
+      <section class="section newsletter">
+
+        <!-- <h2 class="h2 section-title">
+          Đăng Ký nhận <strong class="strong">Tin Mới</strong>
+        </h2>
+
+        <form action="" class="newsletter-form">
+          <input type="email" name="email_address" placeholder="Email của bạn" required class="email-field">
+
+          <button type="submit" class="btn">Đăng Ký</button>
+        </form> -->
+
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer-top section">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="./assets/images_1/anh_chinh/zyro-image.png" width="100" height="40" alt="Blogy logo">
+          </a>
+
+          <p class="footer-text">
+           Là Người Việt Nam, chúng ta cần phải biết về lịch sử của mình, vì nó là nền tảng để chúng ta phát triển hơn nữa.
+          </p>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="h5">Mạng xã hội</p>
+          </li>
+
+          <li class="footer-list-item">
+            <ion-icon name="logo-facebook"></ion-icon>
+
+            <a href="#" class="footer-link hover:underline">Facebook</a> 
+          </li>
+
+          <li class="footer-list-item">
+            <ion-icon name="logo-twitter"></ion-icon>
+
+            <a href="#" class="footer-link hover:underline">Twitter</a>
+          </li>
+
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="h5">Về</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link hover:underline">Hướng dẫn</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link hover:underline">Đăng nhập</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link hover:underline">Đăng Ký</a>
+          </li>
+
+
+          <li>
+            <a href="#" class="footer-link hover:underline">Bảo Mật</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="h5">Hợp tác</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link hover:underline">Các sự kiện </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link hover:underline">Blog & News</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link hover:underline">Câu hỏi</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link hover:underline">Địa chỉ</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link hover:underline">Chứng Nhận</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="h5">Khác</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link hover:underline">Tài Khoản</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link hover:underline">Tên</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link hover:underline">Chia sẻ</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link hover:underline">Tags</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link hover:underline">Tác Giả</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="section footer-bottom">
+
+        <p class="copyright">
+          &copy; QuocKhanh 2023. Thiết Kế <a href="#" class="copyright-link hover:underline">KienXuan</a>.
+        </p>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
